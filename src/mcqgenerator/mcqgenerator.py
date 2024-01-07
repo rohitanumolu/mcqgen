@@ -6,13 +6,12 @@ from dotenv import load_dotenv
 from src.mcqgenerator.utils import read_file,get_table_data
 from src.mcqgenerator.logger import logging
 
-from langchain.llms import OpenAI
-from langchain.chat_models import ChatOpenAI
+#from langchain.llms import OpenAI
+from langchain_community.chat_models import ChatOpenAI
+#from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
-from langchain.callbacks import get_openai_callback
-import PyPDF2
 
 # Load environment variable from .env file
 load_dotenv()
